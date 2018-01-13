@@ -10,10 +10,10 @@ function scrollToBottom() {
   const scrollTop = messages.prop('scrollTop');
   const scrollHeight = messages.prop('scrollHeight');
 
-  console.log(clientHeight + scrollTop + 2 * newMessageHeight, scrollHeight);
+  // console.log(clientHeight + scrollTop + 2 * newMessageHeight, scrollHeight);
 
   if (clientHeight + scrollTop + 2 * newMessageHeight >= scrollHeight) {
-    console.log('Reached bottom!');
+    // console.log('Reached bottom!');
     messages.scrollTop(scrollHeight);
   }
 }
